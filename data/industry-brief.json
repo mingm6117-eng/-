@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "date": "2026年4月21日",
+    "title": "今日行业简报",
+    "subtitle": "聚焦半导体、算力、区块链与 AI 的高信号更新。",
+    "generatedAt": "2026-04-21T00:00:00.000Z",
+    "lastSuccessfulRefreshAt": "2026-04-21T00:00:00.000Z",
+    "status": "ready"
+  },
+  "markets": [
+    {
+      "id": "a-share",
+      "title": "A股",
+      "highlight": "科技链继续扩散，算力硬件与半导体维持主线。",
+      "items": ["资金围绕半导体、国产算力、AI 应用轮动。", "市场更关注 GPU 之外的光通信、散热、PCB、CPU、内存等配套链条。"],
+      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    },
+    {
+      "id": "hk",
+      "title": "港股",
+      "highlight": "恒指和恒生科技延续偏强，AI 基建链热度未退。",
+      "items": ["AI 服务器与加速卡供应链仍是资金重点。", "PCB 与硬件代工链继续受到关注。"],
+      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    },
+    {
+      "id": "us",
+      "title": "美股",
+      "highlight": "地缘风险压制短线风险偏好，但 AI 芯片中期逻辑未破。",
+      "items": ["AI 芯片需求仍支撑半导体资本开支。", "Agentic AI 推动需求从 GPU 扩展到 CPU、内存和数据中心配套。"],
+      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    }
+  ],
+  "crypto": {
+    "id": "crypto",
+    "title": "区块链过去 24 小时",
+    "summary": "加密市场偏震荡，价格和 ETF 资金流是主要观察点。",
+    "items": ["BTC、ETH、BNB 价格会在刷新时自动更新。", "市场风险偏好仍受宏观和地缘因素影响。"],
+    "prices": [{ "label": "BTC", "value": "$0.00" }, { "label": "ETH", "value": "$0.00" }, { "label": "BNB", "value": "$0.00" }],
+    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+  },
+  "ai": [
+    {
+      "id": "global-models",
+      "title": "海外模型",
+      "highlight": "主题正在从聊天能力转向可执行代理和生产工具。",
+      "items": ["OpenAI、Anthropic、Google 的更新会在刷新时聚合。", "重点关注 Agents、Codex、Claude、Gemini 等进展。"],
+      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    },
+    {
+      "id": "china-models",
+      "title": "国内大模型",
+      "highlight": "国内竞争点从纯文本能力转向 agent、多模态和产品工作台。",
+      "items": ["重点关注 DeepSeek、豆包、Kimi。", "刷新后会尝试聚合近期公开动态。"],
+      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    }
+  ],
+  "knowledge": {
+    "id": "knowledge",
+    "title": "今日新知识",
+    "highlight": "Agentic AI tax",
+    "summary": "代理型 AI 会把计算需求从 GPU 外溢到 CPU、内存、存储、网络、散热和电力。",
+    "items": ["它不是正式术语，而是理解 AI 基础设施扩张的一个框架。"],
+    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+  },
+  "signals": {
+    "id": "signals",
+    "title": "信息差",
+    "summary": "值得盯的不是最热 headline，而是政策、能源和基础设施约束。",
+    "items": ["数据中心电力接入可能成为 AI 扩张瓶颈。", "具身智能标准化会影响产业链导入速度。"],
+    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+  }
+}
