@@ -6,7 +6,7 @@ AI 行业信息看板。支持 OpenAI / DeepSeek / Anthropic。
 
 ```bash
 git clone https://github.com/mingm6117-eng/-.git
-cd -
+cd ./-
 npm run openclaw
 ```
 
