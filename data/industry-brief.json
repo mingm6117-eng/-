@@ -1,72 +1,314 @@
 {
   "meta": {
-    "date": "2026年4月21日",
+    "date": "2026年4月22日",
     "title": "今日行业简报",
     "subtitle": "聚焦半导体、算力、区块链与 AI 的高信号更新。",
-    "generatedAt": "2026-04-21T00:00:00.000Z",
-    "lastSuccessfulRefreshAt": "2026-04-21T00:00:00.000Z",
-    "status": "ready"
+    "generatedAt": "2026-04-22T07:43:33.948Z",
+    "lastSuccessfulRefreshAt": "2026-04-22T07:43:33.948Z",
+    "status": "ready",
+    "error": "OpenAI generation failed: Missing LLM_API_KEY for provider \"openai\""
   },
   "markets": [
     {
       "id": "a-share",
       "title": "A股",
-      "highlight": "科技链继续扩散，算力硬件与半导体维持主线。",
-      "items": ["资金围绕半导体、国产算力、AI 应用轮动。", "市场更关注 GPU 之外的光通信、散热、PCB、CPU、内存等配套链条。"],
-      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+      "highlight": "东方财富指数快照已接入，A股行情可在无模型 key 时持续更新。",
+      "items": [
+        "上证指数 4,106.26（+0.52%），深证成指 15,177.29（+1.30%），创业板指 3,752.76（+1.73%），科创50 1,451.14（+1.71%）。",
+        "A股主要指数合计成交额约 3.34 万亿元，用于跟踪科技链与风险偏好强弱。",
+        "半导体、算力、AI 应用仍作为国内市场的重点观察方向。"
+      ],
+      "sources": [
+        {
+          "label": "东方财富",
+          "title": "东方财富 A股主要指数实时行情",
+          "url": "https://quote.eastmoney.com/center/gridlist.html#hs_a_board",
+          "publishedAt": "2026-04-22T07:43:33.938Z",
+          "site": "东方财富"
+        },
+        {
+          "label": "Google News",
+          "title": "Market risk appetite continues to decline amid shrinking trading volumes, awaiting directional clarity in the upcoming market trend. - Moomoo",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaWM3NnVkU2I2dkRKZmVJbTcybDdIMUUwS1B0MFRoZWNFSE5vbHp6bExpVlpiYUpCeGUtcWZMaEVyd2kzNTVtbHFvbEpHbUNBSTFzUnB2SElwb2VOdTRCYzU5bXdUN1Rkams0cHdMYk1KNmtmbVNwUVVSMi1FS1RsMUxnTzN1RzktRG1IM0pCdTBiSDJERkpnRGtTOEFJemFPWEVYSUJub2YwNWd1VFFRa3BLLUk?oc=5",
+          "publishedAt": "2025-10-16T07:00:00.000Z",
+          "site": "Google News"
+        }
+      ]
     },
     {
       "id": "hk",
       "title": "港股",
       "highlight": "恒指和恒生科技延续偏强，AI 基建链热度未退。",
-      "items": ["AI 服务器与加速卡供应链仍是资金重点。", "PCB 与硬件代工链继续受到关注。"],
-      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+      "items": [
+        "恒指收涨 0.8%，恒生科技指数涨 0.46%。",
+        "AI 服务器与加速卡供应链仍是资金重点，PCB 与硬件代工链受关注。",
+        "胜宏科技香港 IPO 需求强劲，说明资本仍偏好“AI 卖水人”。"
+      ],
+      "sources": [
+        {
+          "label": "AAStocks",
+          "title": "港股 AI 与芯片链走势追踪",
+          "url": "https://www.aastocks.com/",
+          "publishedAt": "2026-04-20T08:00:00.000Z",
+          "site": "AAStocks"
+        }
+      ]
     },
     {
       "id": "us",
       "title": "美股",
       "highlight": "地缘风险压制短线风险偏好，但 AI 芯片中期逻辑未破。",
-      "items": ["AI 芯片需求仍支撑半导体资本开支。", "Agentic AI 推动需求从 GPU 扩展到 CPU、内存和数据中心配套。"],
-      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+      "items": [
+        "受中东局势升温影响，三大股指期货回落约 0.5% 至 0.6%，油价走强，VIX 抬升。",
+        "ASML 与 TSMC 上周同步上调展望，继续印证全球 AI 芯片需求强劲。",
+        "Morgan Stanley 认为 Agentic AI 会把增量需求从 GPU 扩展到 CPU 与内存。"
+      ],
+      "sources": [
+        {
+          "label": "Google News",
+          "title": "Geopolitical Tensions Mix AI and Chip Stocks' Performance - Let's Data Science",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORjh6b2g5V1d6VFdoQkpzZHRtS25xOGllVDd2VVhtZzVwY2hYeUN1MWthR29zUXgzZ05FY0NiemJUWWJwa2hjd0lycXZvNURwVzFkSU52ZFJJbktOMV9kNEVsc2VMSVhoUXczYWVaRDF0bHN4OTQ3TFFXVjB3dEVNOE1tT0dxZ1phWWhnTjJ6NVFoV1k4ZlFrNnh4M1NiYWc?oc=5",
+          "publishedAt": "2026-04-21T17:37:22.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "TSMC reports forecast-beating revenue as AI chip demand defies geopolitical tensions - MarketWatch",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPY0prOThSRGVDbFRWRW90amVSNzhkTXlBNWRndUpZNFFuT1dFdzItU1BWemw5Q0R4UUxWanNaQ0lmTFBsUFRwRGZFZW1YMTQyc3haMktVWjhieGxWeFFJVWRkbnpBa0tXdG9BUXF1VGZ0QkI5TWdGMzVvblpEd2VIb19MX3RwMFlaZmdhcm1MZURrbVVZaXRtNjlhcmZPNHFQSDBsZnFnQmR1WWJDZ3JBZEFpRDJnZzE0UkE5V0prT3lTR09IUUZGZWR2ZzVRWkE?oc=5",
+          "publishedAt": "2026-04-10T07:00:00.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "2026 Global Semiconductor Industry Outlook - Deloitte",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNalJ5QUZsY19UbVJDWDM5LUdnMDZ5RkxBS2dQU0lXQng2ZmpvSndFQi1CdV9jT0FTSmNvUEZXdG1kMnZMLXVFQVpnVzlDSncxZjE1VHE3S0pBUzJOWGdoRUs4WG9DLVkwV3VLTkdCMUs5VzZyUmNYX2JVQVJ6X21uSkI1VGZVZGJhZkFSNFlMZTVmZTdqVk5SczRFbUowSFlsME9Hd29xSUZBSFJMX3FOM3FKdkJEQ3B5cHY1dVRmUTlVTFFPb1NSNg?oc=5",
+          "publishedAt": "2026-02-05T08:00:00.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "A Look At Analog Devices (ADI) Valuation As Geopolitics Ease And AI Demand Supports Semiconductor Momentum - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVW5GbHhjUzhDb0s5T0FUakZvbWZZMTh3R19MbWh5bDVQbFozVjZsNlhYal9pTFlDaG9MNURhZXJmOEphQnZqOTRYU3lqS29FTHlWQWdfVTUtT3hUR3VNeGZsSWhwN01UNUpUNHZoTEdiTy1ueG1UVGs2WXFBdlpzek9yYkdqbEFfcHJ3RXFsdFBtMU5SdnlLUXJ4NHo2OUM2Qmd3dENabW5HT1lrY2o1ZU9qbFBIMEVGcEUxZWJId202Z1g5aTdJYThOMXRseWdJNHZUWdIB2gFBVV95cUxOMm85SjIxbnlZSThRZEhpcUV2SUdLTjlLbl9MLUNtOHFrYXRBZ3Jzd0o2cFlQay01SWQ2eWlUMmFKQmNjWnR6MFJCR1RITjdQdmtpamxBbjJ3RFM0N20xSk1jYVBGSUI0T3V3WE81aWc3VDlaZ29yTzlWTWVwTHZjQXhFaFBMS0p2eUs1cm1NTGxhRzktSUpWaHB5UGlrMG5tcHFzZnRFMG80YjM0c0JYVFI5el9CclhVYnV6UnM2SmZWa04yUDNjNXRvZ2ZjcmJ0VkhLR1RkV0ItZw?oc=5",
+          "publishedAt": "2026-04-11T22:50:12.000Z",
+          "site": "Google News"
+        }
+      ]
     }
   ],
   "crypto": {
     "id": "crypto",
     "title": "区块链过去 24 小时",
-    "summary": "加密市场偏震荡，价格和 ETF 资金流是主要观察点。",
-    "items": ["BTC、ETH、BNB 价格会在刷新时自动更新。", "市场风险偏好仍受宏观和地缘因素影响。"],
-    "prices": [{ "label": "BTC", "value": "$0.00" }, { "label": "ETH", "value": "$0.00" }, { "label": "BNB", "value": "$0.00" }],
-    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    "summary": "加密市场偏震荡，地缘风险压住价格弹性，但 ETF 资金仍在持续流入。",
+    "items": [
+      "全球加密总市值过去 24 小时约回落 2.11%，BTC 日内区间约 $73,724 至 $76,241。",
+      "美国比特币现货 ETF 上周净流入约 9.96 亿美元，以太坊现货 ETF 净流入约 2.76 亿美元。",
+      "市场当前仍把加密资产当作高 beta 风险资产交易，而不是避险资产。"
+    ],
+    "prices": [
+      {
+        "label": "BTC",
+        "value": "$78,015.1"
+      },
+      {
+        "label": "ETH",
+        "value": "$2,389.84"
+      },
+      {
+        "label": "BNB",
+        "value": "$642.55"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Google News",
+        "title": "BTC Clears $75K on Macro Tailwinds But ETF Outflows Surge — Fed Transition, Cooling Inflation & X Money Crypto Tease Ahead - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE14bFkzUW5BdG56QWRBM0hFZkM2dnlVNTBJZVdVVWR0YXI2bVhqY1ZUUjhZaVpseGRpRU0tUGhjSlBYTWZUb1VOQnVSc3pqamxDd1VyaGM4cEt6TW1sbDg3X1V4cUE?oc=5",
+        "publishedAt": "2026-04-14T09:30:05.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "Crypto News Today: Crypto Funds See $414M Outflows as Bitcoin, Ethereum ETFs Reverse Amid Fed, Inflation, Iran Risks - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE41alQ0NXZpSHp3c0ZZNVdNNVh1d21VUGVWR1NSWjI4SHlFZ0d3THE3QVFTNGdnMFFfUzI1QlB6aTJnSktZZzI5MUp4VWJQeFRnbzNlSEtaNlRRMlVEMnhudGRPNzY?oc=5",
+        "publishedAt": "2026-03-30T11:52:22.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "Bitcoin ETF vs. Ethereum ETF: What’s the Difference? - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1maXg0NHhEX0dnSGdua3F5b09oZ3BXVUZHMjU1LTJBVUxoRjlRdlN2YkIxak42cnRYSzR5MzlIMk5UMVc1eVF3dHNFQWR4cGtKdllFci1vQlltcnF3R3prdDN2Yw?oc=5",
+        "publishedAt": "2025-11-04T08:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "What Is a Crypto ETF? How It Works & Why You Should Invest In It - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41OXZHU3k1UDN3NzA5Slh6OXVERDJZZDNjMXpCUVd5aGZvWUdVNkpwaWYxTF9MNk9lUUprVGFlSjBKbnA4MnNNdjZTbXU5VXVQQ3pNb1ZnUmVHcTQ2Y2diTlpnYw?oc=5",
+        "publishedAt": "2026-01-17T08:00:00.000Z",
+        "site": "Google News"
+      }
+    ]
   },
   "ai": [
     {
       "id": "global-models",
       "title": "海外模型",
-      "highlight": "主题正在从聊天能力转向可执行代理和生产工具。",
-      "items": ["OpenAI、Anthropic、Google 的更新会在刷新时聚合。", "重点关注 Agents、Codex、Claude、Gemini 等进展。"],
-      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+      "highlight": "主题已经从“聊天能力”转向“可执行代理 + 生产工具”。",
+      "items": [
+        "Anthropic 于 4 月 16 日发布 Claude Opus 4.7，4 月 17 日上线 Claude Design。",
+        "OpenAI 于 4 月 16 日发布“Codex for (almost) everything”，4 月 15 日更新 Agents SDK。",
+        "Google 持续把 Gemini 深度嵌入搜索、地图、Photos 与 app 层。"
+      ],
+      "sources": [
+        {
+          "label": "Google News",
+          "title": "Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5fdy1yMjdvS1NvTl9pS3h1ck56aG0wRERDMy0yeDJJNmdJdEd0Z3I4N0xYS3RlY3AxWmtBR25FSkpPUWNrM0M1U1RxT0lPTXhja1prTGw4RGNNOHIweHdvcXd3Nk1DUQ?oc=5",
+          "publishedAt": "2026-04-20T20:50:10.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "Introducing Claude Design by Anthropic Labs - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JT2syNlBSbmRUM0xtZzl3bG02dTRicmR2N0J3UDRpQ29zY0tSeEhoUmp5dEJyWmhfY0I2MzVEbjY3NkV4UTJtYzhKbDB6Ri1PSGJDSnJhY3o3T1JfU3FMcEVFUjFjbkNVaGR3?oc=5",
+          "publishedAt": "2026-04-17T15:48:03.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "Introducing Claude Opus 4.7 - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1rS2xYRnJxOV9fQjgxWkl0OHlJRFhxMktsVmtTdGV6dnhPTXQzSXcwRE5hQXhOUGdVMXNwVVBZb01wYTVlY0tCT3VKZTBVQzZtVXRGY25XME5rUQ?oc=5",
+          "publishedAt": "2026-04-16T14:26:55.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jeHE2QnZ3S3Z5NzdNNndqaGN1MFdlWlFvbHhzaUM0QlhHWTdhOWgtU0w5djZMdnVXYlpEWDJicmZnMm5hdEI0a01zVmZ4QWtpcngtLXA3a3JEQkE?oc=5",
+          "publishedAt": "2026-04-14T14:07:45.000Z",
+          "site": "Google News"
+        }
+      ]
     },
     {
       "id": "china-models",
       "title": "国内大模型",
-      "highlight": "国内竞争点从纯文本能力转向 agent、多模态和产品工作台。",
-      "items": ["重点关注 DeepSeek、豆包、Kimi。", "刷新后会尝试聚合近期公开动态。"],
-      "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+      "highlight": "国内竞争点正在从纯文本能力转向 agent、多模态和产品工作台。",
+      "items": [
+        "DeepSeek 公开更新仍以 DeepSeek-V3.2 系列为主，市场关注新一代 agent-oriented 版本。",
+        "豆包/Seed 近期重点是全双工语音与图像生成，强化实时交互与多模态落地。",
+        "Kimi 继续把 Agent Swarm、Docs、Slides、Sheets、Deep Research 摆到产品前台。"
+      ],
+      "sources": [
+        {
+          "label": "Google News",
+          "title": "Platform - DeepSeek Platform",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8teEpGTDYzMktKQnZqcU1jczVyVUVjcWhGM255b1phTW1wTWd0cUExTFNqaTlDQUpWd1hWeU90aVlqTTNJ?oc=5",
+          "publishedAt": "2024-01-18T01:15:24.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "DeepSeek - DeepSeek",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE55UGhQbHRmTlFjcWhNVXNsWURScmliOTk3YTBsNHJUNVNKQW5SclNKZk1KY2dGTGRINUl1Q0o4cVRlZw?oc=5",
+          "publishedAt": "2025-01-30T15:23:25.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "DeepSeek - DeepSeek",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9feExzVWdYdjU3azA4bmRTQjlWeno2SGdhVS1Zb0pjSHJocVlNM3lhQ3EybmFvUm8xSTFwWFlSYzFWTEVMZTM3Mw?oc=5",
+          "publishedAt": "2024-06-18T12:44:16.000Z",
+          "site": "Google News"
+        },
+        {
+          "label": "Google News",
+          "title": "DeepSeek - Into the Unknown - DeepSeek",
+          "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBlSUN1elg3S2dQWFN3UzFFVzFuT0Y5VzhqU1lDeUpOUGI3TFFMX0M5QzB6Sm9HMHRVb3BnVGNzYw?oc=5",
+          "publishedAt": "2023-11-21T19:05:46.000Z",
+          "site": "Google News"
+        }
+      ]
     }
   ],
   "knowledge": {
     "id": "knowledge",
     "title": "今日新知识",
     "highlight": "Agentic AI tax",
-    "summary": "代理型 AI 会把计算需求从 GPU 外溢到 CPU、内存、存储、网络、散热和电力。",
-    "items": ["它不是正式术语，而是理解 AI 基础设施扩张的一个框架。"],
-    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    "summary": "可以把它理解为“代理型 AI 带来的算力税”：当模型从回答问题走向执行任务，新增成本会从 GPU 外溢到 CPU、内存、存储、网络、散热和电力。",
+    "items": [
+      "它不是正式术语，而是市场越来越常用的一个理解框架。",
+      "这解释了为什么越来越多卖方开始讨论 AI 带动的“全栈数据中心 CAPEX”。"
+    ],
+    "sources": [
+      {
+        "label": "Google News",
+        "title": "Geopolitical Tensions Mix AI and Chip Stocks' Performance - Let's Data Science",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORjh6b2g5V1d6VFdoQkpzZHRtS25xOGllVDd2VVhtZzVwY2hYeUN1MWthR29zUXgzZ05FY0NiemJUWWJwa2hjd0lycXZvNURwVzFkSU52ZFJJbktOMV9kNEVsc2VMSVhoUXczYWVaRDF0bHN4OTQ3TFFXVjB3dEVNOE1tT0dxZ1phWWhnTjJ6NVFoV1k4ZlFrNnh4M1NiYWc?oc=5",
+        "publishedAt": "2026-04-21T17:37:22.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "TSMC reports forecast-beating revenue as AI chip demand defies geopolitical tensions - MarketWatch",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPY0prOThSRGVDbFRWRW90amVSNzhkTXlBNWRndUpZNFFuT1dFdzItU1BWemw5Q0R4UUxWanNaQ0lmTFBsUFRwRGZFZW1YMTQyc3haMktVWjhieGxWeFFJVWRkbnpBa0tXdG9BUXF1VGZ0QkI5TWdGMzVvblpEd2VIb19MX3RwMFlaZmdhcm1MZURrbVVZaXRtNjlhcmZPNHFQSDBsZnFnQmR1WWJDZ3JBZEFpRDJnZzE0UkE5V0prT3lTR09IUUZGZWR2ZzVRWkE?oc=5",
+        "publishedAt": "2026-04-10T07:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "2026 Global Semiconductor Industry Outlook - Deloitte",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNalJ5QUZsY19UbVJDWDM5LUdnMDZ5RkxBS2dQU0lXQng2ZmpvSndFQi1CdV9jT0FTSmNvUEZXdG1kMnZMLXVFQVpnVzlDSncxZjE1VHE3S0pBUzJOWGdoRUs4WG9DLVkwV3VLTkdCMUs5VzZyUmNYX2JVQVJ6X21uSkI1VGZVZGJhZkFSNFlMZTVmZTdqVk5SczRFbUowSFlsME9Hd29xSUZBSFJMX3FOM3FKdkJEQ3B5cHY1dVRmUTlVTFFPb1NSNg?oc=5",
+        "publishedAt": "2026-02-05T08:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "A Look At Analog Devices (ADI) Valuation As Geopolitics Ease And AI Demand Supports Semiconductor Momentum - simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVW5GbHhjUzhDb0s5T0FUakZvbWZZMTh3R19MbWh5bDVQbFozVjZsNlhYal9pTFlDaG9MNURhZXJmOEphQnZqOTRYU3lqS29FTHlWQWdfVTUtT3hUR3VNeGZsSWhwN01UNUpUNHZoTEdiTy1ueG1UVGs2WXFBdlpzek9yYkdqbEFfcHJ3RXFsdFBtMU5SdnlLUXJ4NHo2OUM2Qmd3dENabW5HT1lrY2o1ZU9qbFBIMEVGcEUxZWJId202Z1g5aTdJYThOMXRseWdJNHZUWdIB2gFBVV95cUxOMm85SjIxbnlZSThRZEhpcUV2SUdLTjlLbl9MLUNtOHFrYXRBZ3Jzd0o2cFlQay01SWQ2eWlUMmFKQmNjWnR6MFJCR1RITjdQdmtpamxBbjJ3RFM0N20xSk1jYVBGSUI0T3V3WE81aWc3VDlaZ29yTzlWTWVwTHZjQXhFaFBMS0p2eUs1cm1NTGxhRzktSUpWaHB5UGlrMG5tcHFzZnRFMG80YjM0c0JYVFI5el9CclhVYnV6UnM2SmZWa04yUDNjNXRvZ2ZjcmJ0VkhLR1RkV0ItZw?oc=5",
+        "publishedAt": "2026-04-11T22:50:12.000Z",
+        "site": "Google News"
+      }
+    ]
   },
   "signals": {
     "id": "signals",
     "title": "信息差",
-    "summary": "值得盯的不是最热 headline，而是政策、能源和基础设施约束。",
-    "items": ["数据中心电力接入可能成为 AI 扩张瓶颈。", "具身智能标准化会影响产业链导入速度。"],
-    "sources": [{ "label": "Source", "title": "示例来源", "url": "https://news.google.com/", "publishedAt": null, "site": "Google News" }]
+    "summary": "值得盯的不是最热 headline，而是基础设施与政策约束正在悄悄抬头。",
+    "items": [
+      "美国 FERC 计划在 6 月前就数据中心并网问题作出决定，AI 扩张的真正瓶颈正在向电力接入转移。",
+      "缅因州议会已通过对大型数据中心的新建限制，地方层面对能源、用水、土地的政治约束开始显性化。",
+      "工信部发布《人形机器人与具身智能标准体系（2026版）》及首份测试标准，国内具身智能开始从题材走向标准化。"
+    ],
+    "sources": [
+      {
+        "label": "Google News",
+        "title": "Will AI Raise Your Electric Bill? EIA Starts Counting Data Center Power as Maine Pauses 20-Megawatt Builds - Intelligent Living",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XNE9oQTJNVjc1Xy1mLVRyZUl4UllZZWFjSkVHNXBPT0dUQThiQ1lTOGlnRWhUMUZtN2IyQmwtemJuYXJKc0NxUE5wRnNrVnhROU85cjdKTnJ4UHV6dnlBdndoUTY1ZnN5T0RZWm0zX3NaSFpXU0F4VjF5RDc?oc=5",
+        "publishedAt": "2026-04-18T09:29:25.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "The Entire State of Maine Is Poised to Ban New Data Centers - Futurism",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQM09zVVFUQXR6S1dZcUhvR252czZXTkRreHduWWktVTFlOFZhZFZnLWhPRkowN1dYb0Z4VnhuVDRrT2ZWLWt2VlVHakNaZU1VYU9nSUZsRm42dmFVX1B1NlRnLW56alNPT3A5eXpmbnNqVXd5V3d4bjlfa0YzTWw1eC05TQ?oc=5",
+        "publishedAt": "2026-04-06T07:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "AI breakthrough cuts energy use by 100x while boosting accuracy - ScienceDaily",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CWTZjRk1GSnp3NUtGUm1OWG14cUxGYVBpWjBlc0hvbHhJQUZOemNBQ3lXU0JoeFQteTJnNkpkRXpOUENVRVE3NWI2bllLb2V0ME1xc1FxUTRsdlJrUnpJZkcxbTFSUlJfcGRuUmpobw?oc=5",
+        "publishedAt": "2026-04-05T07:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "The future of data centers - Brookings",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5ZWlmZXlfdXRiTDNfUHpfRjFHX2o1SGNyQ2dSWjNyRU55OGo2UDhNS0EzSFBnakpFeEhDbEJLWGU1b0p1M2ZuMHd2MWpSemQzYVFkZk5mSldSbUpoMS1rTmpPbk1HZUJTMWNIeFhSaw?oc=5",
+        "publishedAt": "2025-11-05T08:00:00.000Z",
+        "site": "Google News"
+      }
+    ]
   }
 }
