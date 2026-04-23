@@ -163,6 +163,68 @@ async function fetchEastmoneyAshareSnapshot() {
   }
 }
 
+async function fetchEastmoneyHkSnapshot() {
+  const urls = [
+    [
+      'https://push2.eastmoney.com/api/qt/ulist.np/get',
+      '?fltt=2',
+      '&secids=100.HSI,100.HSCEI',
+      '&fields=f12,f14,f2,f3,f4,f6',
+    ].join(''),
+    [
+      'https://push2.eastmoney.com/api/qt/ulist.np/get',
+      '?fltt=2',
+      '&secids=124.HSTECH',
+      '&fields=f12,f14,f2,f3,f4,f6',
+    ].join(''),
+  ];
+
+  try {
+    const responses = await Promise.all(
+      urls.map((url) =>
+        fetch(url, {
+          headers: {
+            Referer: 'https://quote.eastmoney.com/',
+            'User-Agent': 'Mozilla/5.0 IndustryBriefSite/1.0',
+          },
+        }),
+      ),
+    );
+
+    if (responses.some((res) => !res.ok)) {
+      throw new Error('Eastmoney HK fetch failed');
+    }
+
+    const payloads = await Promise.all(responses.map((res) => res.json()));
+    const rows = payloads.flatMap((json) => (Array.isArray(json?.data?.diff) ? json.data.diff : []));
+    if (!rows.length) return null;
+
+    const indexes = rows.map((row) => ({
+      code: row.f12,
+      name: row.f14,
+      price: Number(row.f2),
+      changePct: Number(row.f3),
+      change: Number(row.f4),
+      turnover: Number(row.f6),
+    }));
+
+    const turnover = indexes.reduce((sum, item) => sum + (Number.isFinite(item.turnover) ? item.turnover : 0), 0);
+    return {
+      indexes,
+      turnoverText: turnover > 0 ? `${(turnover / 1e9).toFixed(1)} 亿港元` : 'Unknown',
+      source: {
+        label: '东方财富',
+        title: '东方财富 港股主要指数实时行情',
+        url: 'https://quote.eastmoney.com/center/gridlist.html#hk_stocks',
+        publishedAt: new Date().toISOString(),
+        site: '东方财富',
+      },
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function collectCandidates() {
   const [aShare, hk, us, crypto, anthropic, openai, google, deepseek, seed, moonshot, signals] =
     await Promise.all([
@@ -181,10 +243,12 @@ async function collectCandidates() {
 
   const prices = await fetchCryptoPrices();
   const eastmoneyAshare = await fetchEastmoneyAshareSnapshot();
+  const eastmoneyHk = await fetchEastmoneyHkSnapshot();
 
   return {
     prices,
     eastmoneyAshare,
+    eastmoneyHk,
     feeds: {
       markets: { aShare, hk, us },
       crypto,
@@ -269,6 +333,14 @@ function fallbackBrief(candidates) {
         '半导体、算力、AI 应用仍作为国内市场的重点观察方向。',
       ]
     : null;
+  const eastmoneyHk = candidates.eastmoneyHk;
+  const eastmoneyHkItems = eastmoneyHk?.indexes?.length
+    ? [
+        eastmoneyHk.indexes.map(formatEastmoneyIndexLine).join('，') + '。',
+        `港股主要指数合计成交额约 ${eastmoneyHk.turnoverText}，用于跟踪离岸科技风险偏好。`,
+        '恒生科技、AI 基建链和中资互联网仍是港股科技方向的重点观察对象。',
+      ]
+    : null;
   const aiGlobalSources = buildSourceEntries([
     ...candidates.feeds.ai.anthropic,
     ...candidates.feeds.ai.openai,
@@ -309,7 +381,13 @@ function fallbackBrief(candidates) {
       },
       {
         ...base.markets[1],
-        sources: marketSources.hk.length ? marketSources.hk : base.markets[1].sources,
+        highlight: eastmoneyHk
+          ? '东方财富港股指数快照已接入，恒指、国企指数和恒生科技可持续更新。'
+          : base.markets[1].highlight,
+        items: eastmoneyHkItems || base.markets[1].items,
+        sources: eastmoneyHk
+          ? [eastmoneyHk.source, ...marketSources.hk].slice(0, 4)
+          : marketSources.hk.length ? marketSources.hk : base.markets[1].sources,
       },
       {
         ...base.markets[2],
@@ -410,6 +488,7 @@ async function buildIndustryBrief({ force = false } = {}) {
       const providerLabel = {
         anthropic: 'Anthropic',
         deepseek: 'DeepSeek',
+        openclaw: 'OpenClaw',
         openai: 'OpenAI',
       }[provider] || provider;
       generated.meta.error = `${providerLabel} generation failed: ${err.message}`;

@@ -98,4 +98,13 @@ server.listen(PORT, () => {
   console.log(`Model: ${provider.model}`);
 });
 
+industryBriefData
+  .buildIndustryBrief({ force: false })
+  .then((brief) => {
+    console.log(`[industry-brief] Ready: ${brief.meta.date} (${brief.meta.status})`);
+  })
+  .catch((err) => {
+    console.error('[industry-brief] Startup refresh failed:', err.message);
+  });
+
 industryBriefData.scheduleDailyRefresh();

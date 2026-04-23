@@ -1,6 +1,6 @@
 # Industry Brief Site
 
-AI 行业信息看板。支持 OpenAI / DeepSeek / Anthropic。
+AI 行业信息看板。支持 OpenClaw / OpenAI / DeepSeek / Anthropic。
 
 ## 一键打开
 
@@ -51,9 +51,22 @@ npm run update
 默认免 key 数据源：
 
 - 区块链价格：Coinbase Public API
-- A股主要指数：东方财富公开行情 API
+- A股/港股主要指数：东方财富公开行情 API
 
-没有模型 key 时，价格和 A股行情也会更新；配置模型 key 后，会进一步自动整理新闻正文。
+没有模型 key 时，价格和 A股/港股行情也会更新；如果你本机 OpenClaw 已接模型，会自动尝试用 OpenClaw 整理新闻；配置模型 API key 后，会优先使用 API 生成新闻正文。
+
+推荐默认配置：
+
+```bash
+LLM_PROVIDER=auto
+```
+
+高级用户也可以指定 OpenClaw：
+
+```bash
+LLM_PROVIDER=openclaw
+OPENCLAW_LLM_COMMAND=openclaw infer --prompt-file {promptFile}
+```
 
 ## 发布到阿里云
 

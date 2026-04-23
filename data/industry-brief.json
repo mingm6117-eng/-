@@ -1,12 +1,12 @@
 {
   "meta": {
-    "date": "2026年4月22日",
+    "date": "2026年4月23日",
     "title": "今日行业简报",
     "subtitle": "聚焦半导体、算力、区块链与 AI 的高信号更新。",
-    "generatedAt": "2026-04-22T07:43:33.948Z",
-    "lastSuccessfulRefreshAt": "2026-04-22T07:43:33.948Z",
+    "generatedAt": "2026-04-23T03:52:41.172Z",
+    "lastSuccessfulRefreshAt": "2026-04-23T03:52:41.172Z",
     "status": "ready",
-    "error": "OpenAI generation failed: Missing LLM_API_KEY for provider \"openai\""
+    "error": "OpenClaw generation failed: OpenClaw CLI not found"
   },
   "markets": [
     {
@@ -14,8 +14,8 @@
       "title": "A股",
       "highlight": "东方财富指数快照已接入，A股行情可在无模型 key 时持续更新。",
       "items": [
-        "上证指数 4,106.26（+0.52%），深证成指 15,177.29（+1.30%），创业板指 3,752.76（+1.73%），科创50 1,451.14（+1.71%）。",
-        "A股主要指数合计成交额约 3.34 万亿元，用于跟踪科技链与风险偏好强弱。",
+        "上证指数 4,073.71（-0.79%），深证成指 14,945.2（-1.53%），创业板指 3,684.12（-1.83%），科创50 1,419.62（-2.17%）。",
+        "A股主要指数合计成交额约 2.54 万亿元，用于跟踪科技链与风险偏好强弱。",
         "半导体、算力、AI 应用仍作为国内市场的重点观察方向。"
       ],
       "sources": [
@@ -23,7 +23,7 @@
           "label": "东方财富",
           "title": "东方财富 A股主要指数实时行情",
           "url": "https://quote.eastmoney.com/center/gridlist.html#hs_a_board",
-          "publishedAt": "2026-04-22T07:43:33.938Z",
+          "publishedAt": "2026-04-23T03:52:39.330Z",
           "site": "东方财富"
         },
         {
@@ -38,19 +38,19 @@
     {
       "id": "hk",
       "title": "港股",
-      "highlight": "恒指和恒生科技延续偏强，AI 基建链热度未退。",
+      "highlight": "东方财富港股指数快照已接入，恒指、国企指数和恒生科技可持续更新。",
       "items": [
-        "恒指收涨 0.8%，恒生科技指数涨 0.46%。",
-        "AI 服务器与加速卡供应链仍是资金重点，PCB 与硬件代工链受关注。",
-        "胜宏科技香港 IPO 需求强劲，说明资本仍偏好“AI 卖水人”。"
+        "恒生指数 25,878.95（-1.09%），国企指数 8,718.25（-0.95%），恒生科技指数 4,850.39（-2.29%）。",
+        "港股主要指数合计成交额约 206.4 亿港元，用于跟踪离岸科技风险偏好。",
+        "恒生科技、AI 基建链和中资互联网仍是港股科技方向的重点观察对象。"
       ],
       "sources": [
         {
-          "label": "AAStocks",
-          "title": "港股 AI 与芯片链走势追踪",
-          "url": "https://www.aastocks.com/",
-          "publishedAt": "2026-04-20T08:00:00.000Z",
-          "site": "AAStocks"
+          "label": "东方财富",
+          "title": "东方财富 港股主要指数实时行情",
+          "url": "https://quote.eastmoney.com/center/gridlist.html#hk_stocks",
+          "publishedAt": "2026-04-23T03:52:41.149Z",
+          "site": "东方财富"
         }
       ]
     },
@@ -87,9 +87,9 @@
         },
         {
           "label": "Google News",
-          "title": "A Look At Analog Devices (ADI) Valuation As Geopolitics Ease And AI Demand Supports Semiconductor Momentum - simplywall.st",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVW5GbHhjUzhDb0s5T0FUakZvbWZZMTh3R19MbWh5bDVQbFozVjZsNlhYal9pTFlDaG9MNURhZXJmOEphQnZqOTRYU3lqS29FTHlWQWdfVTUtT3hUR3VNeGZsSWhwN01UNUpUNHZoTEdiTy1ueG1UVGs2WXFBdlpzek9yYkdqbEFfcHJ3RXFsdFBtMU5SdnlLUXJ4NHo2OUM2Qmd3dENabW5HT1lrY2o1ZU9qbFBIMEVGcEUxZWJId202Z1g5aTdJYThOMXRseWdJNHZUWdIB2gFBVV95cUxOMm85SjIxbnlZSThRZEhpcUV2SUdLTjlLbl9MLUNtOHFrYXRBZ3Jzd0o2cFlQay01SWQ2eWlUMmFKQmNjWnR6MFJCR1RITjdQdmtpamxBbjJ3RFM0N20xSk1jYVBGSUI0T3V3WE81aWc3VDlaZ29yTzlWTWVwTHZjQXhFaFBMS0p2eUs1cm1NTGxhRzktSUpWaHB5UGlrMG5tcHFzZnRFMG80YjM0c0JYVFI5el9CclhVYnV6UnM2SmZWa04yUDNjNXRvZ2ZjcmJ0VkhLR1RkV0ItZw?oc=5",
-          "publishedAt": "2026-04-11T22:50:12.000Z",
+          "title": "Pax Silica: alliances, frontier and markets in the geopolitics of the chip - Real Instituto Elcano",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2tJZ0FKVnhBTDVLVVJmYlk5OGptNmJLcVFMVDVQZnZkS1VHeUZ4WHAtSUlIZjNSVjZUODVBQWZUMTlFdG9UQ2YyOTRKNXctRXRMLS16Z2pfdU1qVDRRWjlZNzlCTWVzY0VrYUJjUnNzWC1iLVBTb2tuTlJqQ0FkSURwV2hETGs3a2FWSEZlNzNYS1U4U3BtWk5qbXhJQkhHamd5R3BpOWdSMHNjdDJBQVJuTHFSNXNrbGRDWVpR?oc=5",
+          "publishedAt": "2026-01-14T08:00:00.000Z",
           "site": "Google News"
         }
       ]
@@ -107,15 +107,15 @@
     "prices": [
       {
         "label": "BTC",
-        "value": "$78,015.1"
+        "value": "$77,685.67"
       },
       {
         "label": "ETH",
-        "value": "$2,389.84"
+        "value": "$2,338.71"
       },
       {
         "label": "BNB",
-        "value": "$642.55"
+        "value": "$634.95"
       }
     ],
     "sources": [
@@ -128,23 +128,23 @@
       },
       {
         "label": "Google News",
-        "title": "Crypto News Today: Crypto Funds See $414M Outflows as Bitcoin, Ethereum ETFs Reverse Amid Fed, Inflation, Iran Risks - Binance",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE41alQ0NXZpSHp3c0ZZNVdNNVh1d21VUGVWR1NSWjI4SHlFZ0d3THE3QVFTNGdnMFFfUzI1QlB6aTJnSktZZzI5MUp4VWJQeFRnbzNlSEtaNlRRMlVEMnhudGRPNzY?oc=5",
-        "publishedAt": "2026-03-30T11:52:22.000Z",
+        "title": "What Is a Crypto ETF? How It Works & Why You Should Invest In It - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41OXZHU3k1UDN3NzA5Slh6OXVERDJZZDNjMXpCUVd5aGZvWUdVNkpwaWYxTF9MNk9lUUprVGFlSjBKbnA4MnNNdjZTbXU5VXVQQ3pNb1ZnUmVHcTQ2Y2diTlpnYw?oc=5",
+        "publishedAt": "2026-01-17T08:00:00.000Z",
         "site": "Google News"
       },
       {
         "label": "Google News",
         "title": "Bitcoin ETF vs. Ethereum ETF: What’s the Difference? - Binance",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1maXg0NHhEX0dnSGdua3F5b09oZ3BXVUZHMjU1LTJBVUxoRjlRdlN2YkIxak42cnRYSzR5MzlIMk5UMVc1eVF3dHNFQWR4cGtKdllFci1vQlltcnF3R3prdDN2Yw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE05MWViUFFzd2tMblB6TnR5TGZsaVFZeDJzMVp1dkNQQV9zaGIxTzVWcGZLX0loWGZfaktGYmtoMTExZWxCZFV5N25hM091U3Iyakt3QUxPNzBZZ0UzRWxKd25jbw?oc=5",
         "publishedAt": "2025-11-04T08:00:00.000Z",
         "site": "Google News"
       },
       {
         "label": "Google News",
-        "title": "What Is a Crypto ETF? How It Works & Why You Should Invest In It - Binance",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41OXZHU3k1UDN3NzA5Slh6OXVERDJZZDNjMXpCUVd5aGZvWUdVNkpwaWYxTF9MNk9lUUprVGFlSjBKbnA4MnNNdjZTbXU5VXVQQ3pNb1ZnUmVHcTQ2Y2diTlpnYw?oc=5",
-        "publishedAt": "2026-01-17T08:00:00.000Z",
+        "title": "XRP and SOL ETFs Attract Strong Inflows While BTC and ETH See $750M in Outflows - Binance",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wTnFFUHBlVzRxTWQ2R1J3Q0N2aDBxRFExWkRwY0otdW9VSDNvejl5RWRZM3hmWnRBUXIyRm5XajdDcFlkRlN6d185cmNwQkRSVTBiaEJpQWVvUEpkSEZ2LTZCcw?oc=5",
+        "publishedAt": "2026-01-10T08:00:00.000Z",
         "site": "Google News"
       }
     ]
@@ -183,9 +183,9 @@
         },
         {
           "label": "Google News",
-          "title": "Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors - Anthropic",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jeHE2QnZ3S3Z5NzdNNndqaGN1MFdlWlFvbHhzaUM0QlhHWTdhOWgtU0w5djZMdnVXYlpEWDJicmZnMm5hdEI0a01zVmZ4QWtpcngtLXA3a3JEQkE?oc=5",
-          "publishedAt": "2026-04-14T14:07:45.000Z",
+          "title": "Introducing Claude for Education - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDRDZ4Uk1nV09FN2NjQ3Y3MHE3TEtROXlzdk1mS3NCR2tIQjdxYlJucHZORTFPNnNSWDlZcmJwd2syeHlUSmxlNXBfWjJYN3Q5TmpTRWNmUjlQVWlZbXNaaG1sSlpKNUFUV21qMnFkOWI?oc=5",
+          "publishedAt": "2025-04-02T07:00:00.000Z",
           "site": "Google News"
         }
       ]
@@ -223,7 +223,7 @@
         },
         {
           "label": "Google News",
-          "title": "DeepSeek - Into the Unknown - DeepSeek",
+          "title": "Into the Unknown - DeepSeek",
           "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBlSUN1elg3S2dQWFN3UzFFVzFuT0Y5VzhqU1lDeUpOUGI3TFFMX0M5QzB6Sm9HMHRVb3BnVGNzYw?oc=5",
           "publishedAt": "2023-11-21T19:05:46.000Z",
           "site": "Google News"
@@ -264,9 +264,9 @@
       },
       {
         "label": "Google News",
-        "title": "A Look At Analog Devices (ADI) Valuation As Geopolitics Ease And AI Demand Supports Semiconductor Momentum - simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVW5GbHhjUzhDb0s5T0FUakZvbWZZMTh3R19MbWh5bDVQbFozVjZsNlhYal9pTFlDaG9MNURhZXJmOEphQnZqOTRYU3lqS29FTHlWQWdfVTUtT3hUR3VNeGZsSWhwN01UNUpUNHZoTEdiTy1ueG1UVGs2WXFBdlpzek9yYkdqbEFfcHJ3RXFsdFBtMU5SdnlLUXJ4NHo2OUM2Qmd3dENabW5HT1lrY2o1ZU9qbFBIMEVGcEUxZWJId202Z1g5aTdJYThOMXRseWdJNHZUWdIB2gFBVV95cUxOMm85SjIxbnlZSThRZEhpcUV2SUdLTjlLbl9MLUNtOHFrYXRBZ3Jzd0o2cFlQay01SWQ2eWlUMmFKQmNjWnR6MFJCR1RITjdQdmtpamxBbjJ3RFM0N20xSk1jYVBGSUI0T3V3WE81aWc3VDlaZ29yTzlWTWVwTHZjQXhFaFBMS0p2eUs1cm1NTGxhRzktSUpWaHB5UGlrMG5tcHFzZnRFMG80YjM0c0JYVFI5el9CclhVYnV6UnM2SmZWa04yUDNjNXRvZ2ZjcmJ0VkhLR1RkV0ItZw?oc=5",
-        "publishedAt": "2026-04-11T22:50:12.000Z",
+        "title": "Pax Silica: alliances, frontier and markets in the geopolitics of the chip - Real Instituto Elcano",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2tJZ0FKVnhBTDVLVVJmYlk5OGptNmJLcVFMVDVQZnZkS1VHeUZ4WHAtSUlIZjNSVjZUODVBQWZUMTlFdG9UQ2YyOTRKNXctRXRMLS16Z2pfdU1qVDRRWjlZNzlCTWVzY0VrYUJjUnNzWC1iLVBTb2tuTlJqQ0FkSURwV2hETGs3a2FWSEZlNzNYS1U4U3BtWk5qbXhJQkhHamd5R3BpOWdSMHNjdDJBQVJuTHFSNXNrbGRDWVpR?oc=5",
+        "publishedAt": "2026-01-14T08:00:00.000Z",
         "site": "Google News"
       }
     ]
@@ -283,21 +283,7 @@
     "sources": [
       {
         "label": "Google News",
-        "title": "Will AI Raise Your Electric Bill? EIA Starts Counting Data Center Power as Maine Pauses 20-Megawatt Builds - Intelligent Living",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XNE9oQTJNVjc1Xy1mLVRyZUl4UllZZWFjSkVHNXBPT0dUQThiQ1lTOGlnRWhUMUZtN2IyQmwtemJuYXJKc0NxUE5wRnNrVnhROU85cjdKTnJ4UHV6dnlBdndoUTY1ZnN5T0RZWm0zX3NaSFpXU0F4VjF5RDc?oc=5",
-        "publishedAt": "2026-04-18T09:29:25.000Z",
-        "site": "Google News"
-      },
-      {
-        "label": "Google News",
-        "title": "The Entire State of Maine Is Poised to Ban New Data Centers - Futurism",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQM09zVVFUQXR6S1dZcUhvR252czZXTkRreHduWWktVTFlOFZhZFZnLWhPRkowN1dYb0Z4VnhuVDRrT2ZWLWt2VlVHakNaZU1VYU9nSUZsRm42dmFVX1B1NlRnLW56alNPT3A5eXpmbnNqVXd5V3d4bjlfa0YzTWw1eC05TQ?oc=5",
-        "publishedAt": "2026-04-06T07:00:00.000Z",
-        "site": "Google News"
-      },
-      {
-        "label": "Google News",
-        "title": "AI breakthrough cuts energy use by 100x while boosting accuracy - ScienceDaily",
+        "title": "AI breakthrough cuts energy use by 100x while boosting accuracy - Science Daily",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CWTZjRk1GSnp3NUtGUm1OWG14cUxGYVBpWjBlc0hvbHhJQUZOemNBQ3lXU0JoeFQteTJnNkpkRXpOUENVRVE3NWI2bllLb2V0ME1xc1FxUTRsdlJrUnpJZkcxbTFSUlJfcGRuUmpobw?oc=5",
         "publishedAt": "2026-04-05T07:00:00.000Z",
         "site": "Google News"
@@ -307,6 +293,20 @@
         "title": "The future of data centers - Brookings",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5ZWlmZXlfdXRiTDNfUHpfRjFHX2o1SGNyQ2dSWjNyRU55OGo2UDhNS0EzSFBnakpFeEhDbEJLWGU1b0p1M2ZuMHd2MWpSemQzYVFkZk5mSldSbUpoMS1rTmpPbk1HZUJTMWNIeFhSaw?oc=5",
         "publishedAt": "2025-11-05T08:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "Copper in the Age of AI: Challenges of Electrification - S&P Global",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaGFON1BJLWZKNjJLT3ZBX0Q0ejRFWFREWXlwVG1HSXZnSFNYbUdZb0sxa0QzMXk2WU1GeFhSRE1GMTR3M0ZiblVBNkEzcUJPWDFfb3M5VFRoa2dVWmQyOXNpY21hMVV5VHJmY2dhWDJMY2VPTk9Sa1N3WnN0WEtWX3p3MWtjZUQ1eVFEMkF3?oc=5",
+        "publishedAt": "2026-01-08T08:00:00.000Z",
+        "site": "Google News"
+      },
+      {
+        "label": "Google News",
+        "title": "Battle Over Data Centers in Illinois Pits Consumer Costs vs. State Competitiveness - WTTW",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWR3ZGdYM2JpSWZSZ0UwdkpmUW1Lbm91bVZhQkJ3UFBMSVZuWXU3S3RTVld3UTdMVWFrVllHcG5GY0MyWDlkV2hMemtVMGVlOEszZFRCNndVVVZmTm9LZThmUV9JN3lsSlVWaWpxV1lLbnVLckhCRTNMVE9vTlFic2t5bTk0MjNhSnlzWl9pcDNmbFRGdzBXMTMwdTJvak52Nm4xLW5jV2ItQ1BkRExRYg?oc=5",
+        "publishedAt": "2026-02-20T08:00:00.000Z",
         "site": "Google News"
       }
     ]
