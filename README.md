@@ -5,8 +5,8 @@ AI 行业信息看板。支持 OpenClaw / OpenAI / DeepSeek / Anthropic。
 ## 一键打开
 
 ```bash
-git clone https://github.com/mingm6117-eng/-.git
-cd ./-
+git clone https://github.com/mingm6117-eng/IndustryInformation-skill.git
+cd IndustryInformation-skill
 npm run openclaw
 ```
 
